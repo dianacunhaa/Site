@@ -13,9 +13,9 @@
     return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
   };
 
-  // shared/render/plugins/BaseSiteModules/tram-min.js
+  // packages/shared/render/plugins/BaseSiteModules/tram-min.js
   var require_tram_min = __commonJS({
-    "shared/render/plugins/BaseSiteModules/tram-min.js"() {
+    "packages/shared/render/plugins/BaseSiteModules/tram-min.js"() {
       window.tram = function(a) {
         function b(a2, b2) {
           var c2 = new M.Bare();
@@ -729,9 +729,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/underscore-custom.js
+  // packages/shared/render/plugins/BaseSiteModules/underscore-custom.js
   var require_underscore_custom = __commonJS({
-    "shared/render/plugins/BaseSiteModules/underscore-custom.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/underscore-custom.js"(exports, module) {
       var $ = window.$;
       var tram = require_tram_min() && $.tram;
       module.exports = function() {
@@ -965,9 +965,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-lib.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-lib.js
   var require_webflow_lib = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-lib.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-lib.js"(exports, module) {
       var Webflow = {};
       var modules = {};
       var primary = [];
@@ -1167,9 +1167,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-brand.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-brand.js
   var require_webflow_brand = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-brand.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-brand.js"(exports, module) {
       var Webflow = require_webflow_lib();
       Webflow.define("brand", module.exports = function($) {
         var api = {};
@@ -1230,9 +1230,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-focus-visible.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-focus-visible.js
   var require_webflow_focus_visible = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-focus-visible.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-focus-visible.js"(exports, module) {
       var Webflow = require_webflow_lib();
       Webflow.define("focus-visible", module.exports = function() {
         function applyFocusVisiblePolyfill(scope) {
@@ -1381,9 +1381,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-focus.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-focus.js
   var require_webflow_focus = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-focus.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-focus.js"(exports, module) {
       var Webflow = require_webflow_lib();
       Webflow.define("focus", module.exports = function() {
         var capturedEvents = [];
@@ -1433,9 +1433,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-ix-events.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-ix-events.js
   var require_webflow_ix_events = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-ix-events.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-ix-events.js"(exports, module) {
       "use strict";
       var $ = window.jQuery;
       var api = {};
@@ -1490,9 +1490,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-ix.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-ix.js
   var require_webflow_ix = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-ix.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-ix.js"(exports, module) {
       var Webflow = require_webflow_lib();
       var IXEvents = require_webflow_ix_events();
       Webflow.define("ix", module.exports = function($, _) {
@@ -1902,9 +1902,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-ix2-events.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-ix2-events.js
   var require_webflow_ix2_events = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-ix2-events.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-ix2-events.js"(exports, module) {
       "use strict";
       var IXEvents = require_webflow_ix_events();
       function dispatchCustomEvent(element, eventName) {
@@ -12573,9 +12573,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-ix2.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-ix2.js
   var require_webflow_ix2 = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-ix2.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-ix2.js"(exports, module) {
       var Webflow = require_webflow_lib();
       var ix2 = require_engine();
       ix2.setEnv(Webflow.env);
@@ -12585,9 +12585,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-links.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-links.js
   var require_webflow_links = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-links.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-links.js"(exports, module) {
       var Webflow = require_webflow_lib();
       Webflow.define("links", module.exports = function($, _) {
         var api = {};
@@ -12673,9 +12673,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-scroll.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-scroll.js
   var require_webflow_scroll = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-scroll.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-scroll.js"(exports, module) {
       var Webflow = require_webflow_lib();
       Webflow.define("scroll", module.exports = function($) {
         var NS_EVENTS = {
@@ -12847,9 +12847,9 @@
     }
   });
 
-  // shared/render/plugins/BaseSiteModules/webflow-touch.js
+  // packages/shared/render/plugins/BaseSiteModules/webflow-touch.js
   var require_webflow_touch = __commonJS({
-    "shared/render/plugins/BaseSiteModules/webflow-touch.js"(exports, module) {
+    "packages/shared/render/plugins/BaseSiteModules/webflow-touch.js"(exports, module) {
       var Webflow = require_webflow_lib();
       Webflow.define("touch", module.exports = function($) {
         var api = {};
@@ -12950,9 +12950,9 @@
     }
   });
 
-  // shared/render/plugins/Navbar/webflow-navbar.js
+  // packages/shared/render/plugins/Navbar/webflow-navbar.js
   var require_webflow_navbar = __commonJS({
-    "shared/render/plugins/Navbar/webflow-navbar.js"(exports, module) {
+    "packages/shared/render/plugins/Navbar/webflow-navbar.js"(exports, module) {
       var Webflow = require_webflow_lib();
       var IXEvents = require_webflow_ix2_events();
       var KEY_CODES = {
